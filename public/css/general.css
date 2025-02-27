@@ -1,0 +1,98 @@
+body{
+    background-color:#a3c7f7 ;
+}
+.logo{
+    margin-right: 30px;
+    margin:10px;
+    height: 100%;
+    display:flex;
+    
+}
+.marka_mavi{
+    background-color:#004aad ;
+    color:white;
+}
+.marka_yesil{
+    background-color: #00bf63;
+    color:black;
+}
+
+.navbar{
+    background-color:#004aad ;
+    color: #00bf63;
+    border:1px solid #032757;
+    box-shadow: 0px 0px 10px grey;
+    border-radius: 10px;
+    display: flex;
+    align-items:center;
+}   
+.navbar a{
+    color: white;
+    text-decoration: none;
+}
+.navbar a:hover{
+    color: #032757;
+    text-decoration: none;
+}
+.navbarMenu{
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1 1 auto;
+    height:100%;
+}
+.navbarItem{
+    padding: 5px;
+    margin-right:10px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 5px;
+    color:#38e793;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-right:10px;
+    height:40px;
+}
+.navbarItem:hover{
+    border:1px solid  #00bf63;
+    cursor: pointer;
+    background-color: #00bf63;
+    color:#004aad;
+    transform: scale(1.1);
+    transition: ease 0.3s;
+}
+.navbarItem:not(:hover){
+    transform: scale(1);
+    transition: ease 0.8s;
+}
+
+.urunCard {
+    border-radius: 10px; /* Köşe yuvarlama */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+    overflow: hidden; /* İçerik taşarsa gizler */
+    padding: 20px; /* İç boşluk */
+    width: 250px; /* Kart genişliği */
+    margin: 10px; /* Kartlar arasındaki boşluk */
+    text-align: center; /* İçeriği ortalar */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Geçiş efekti */
+}
+
+.urunCard:hover {
+    transform: translateY(-5px); /* Hover etkisi: kartı yukarı kaydırır */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Hover sırasında gölgeyi artırır */
+}
+
+.urunBaslik {
+    font-size: 18px; /* Başlık boyutu */
+    color: #333; /* Başlık rengi */
+    margin-bottom: 10px; /* Başlık ile fotoğraf arasındaki boşluk */
+    font-weight: bold; /* Kalın yazı */
+}
+
+.urunFoto img {
+    width: 100%; /* Resmi kartın genişliğine göre ayarlar */
+    height: auto; /* Yüksekliği orantılı tutar */
+    border-radius: 8px; /* Fotoğrafın köşelerini yuvarlar */
+}
